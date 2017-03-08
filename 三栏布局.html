@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三列等分布局</title>
+	<style>
+		.layout:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.layout{
+			width: 100%;
+			min-width: 600px;
+		}
+		.left,.right,.main{
+			height: 500px;
+			float: left;
+			margin: 0px;
+			box-sizing: border-box;
+			width: 33.333%;
+			border:1px solid #fff;
+		}
+		.main{
+			background-color: lightgreen;
+		}
+		.left,.right{
+			background-color: yellow;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="layout">
+		<div class="left">一</div>
+		<div class="main">样</div>
+		<div class="right">宽</div>
+	</div>
+</body>
+</html>
