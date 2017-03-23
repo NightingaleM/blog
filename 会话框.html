@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>对话框效果</title>
+	<style>
+		.box {
+			width: 200px;
+			height: 80px;
+			border: 1px solid #ccc;
+			position: relative;
+			margin-top: 30px;
+		}
+
+		.box:nth-child(1):before {
+			content: '';
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-bottom: 10px solid #ccc;
+			position: absolute;
+			top: -11px;
+			left: 10px;
+		}
+
+		.box:nth-child(2):before {
+			content: '';
+			border: 10px solid transparent;
+			border-right: 10px solid red;
+			border-top: 10px solid red;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+		.box:nth-child(3):before {
+			content: '';
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-bottom: 10px solid #ccc;
+			position: absolute;
+			top: -11px;
+			left: 10px;
+		}
+
+		.box:nth-child(3):after {
+			content: '';
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-bottom: 10px solid #fff;
+			position: absolute;
+			top: -9px;
+			left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+</body>
+</html>

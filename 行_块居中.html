@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>行内元素居中-inlineblock-vertical-align</title>
+	<style>
+		.box {
+			width: auto;
+			height: 100px;
+			border: 1px solid #ccc;
+			text-align: center;
+		}
+		p {
+			display: inline-block;
+			border: 1px solid;
+			margin: 0;
+		}
+		p:first-child {
+			height: 100%;
+			vertical-align: middle;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<p></p>
+		<p>Something you like</p>
+	</div>
+</body>
+</html>
